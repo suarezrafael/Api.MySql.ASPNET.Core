@@ -24,6 +24,7 @@ O banco de dados é em MySql e está hospedado em um outro servidor gratuito sma
 Obs.: 30 min de prática.
 <hr>
 1. Criar projeto API Web do ASP.NET Core
+
 2. Instalar pacotes 
    - Microsoft.EntityFrameworkCore
    - Microsoft.EntityFrameworkCore.Design
@@ -32,6 +33,7 @@ Obs.: 30 min de prática.
    - Microsoft.VisualStudio.Azure.Containers.Tools.Targets
    - Microsoft.VisualStudio.Azure.Containers.Tools.Targets
    - Microsoft.VisualStudio.Web.CodeGeneration.Design
+
 3. Criar classe Estado na pasta models
 ```c#
     public class Estado
@@ -45,6 +47,7 @@ Obs.: 30 min de prática.
         public string Nome { get; set; }
     }
 ```
+
 4. Criar classe de contexto na pastas Data
 ```c#
     public class ApiDbContext : DbContext
@@ -56,6 +59,7 @@ Obs.: 30 min de prática.
         public DbSet<Estado> Estados { get; set; }
     }
  ```
+
 5. Configurar connection string no appsettings.json
 ```json
 "ConnectionStrings": {
